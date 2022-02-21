@@ -16,22 +16,24 @@ Also do the same for a square to get the perimeter and area.
 def measurements(a_list):
     # inner function
     def perimeter(b_list):
+        calculated_perimeter = 0
         # for square
-        if len(a_list) == 1:
+        if len(b_list) == 1:
             calculated_perimeter = a_list[0] * 4
         # for rectangle
-        elif len(a_list) == 2:
+        elif len(b_list) == 2:
             calculated_perimeter = (a_list[0] + a_list[1]) * 2
         # returns result
         return calculated_perimeter
 
     # inner function to calculate area, accepts a list as a parameter
     def area(b_list):
+        calculated_area = 0
         # for square
-        if len(a_list) == 1:
+        if len(b_list) == 1:
             calculated_area = a_list[0] * a_list[0]
         # for rectangle
-        elif len(a_list) == 2:
+        elif len(b_list) == 2:
             calculated_area = a_list[0] * a_list[1]
         # returns result
         return calculated_area
